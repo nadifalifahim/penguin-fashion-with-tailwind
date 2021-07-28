@@ -20,44 +20,65 @@
   <body>
     <!-- Head Container -->
     <header class="bg-yellow-50">
-      <div class="lg:w-9/12 md:w-11/12 m-auto">
+      <!-- Header -->
+      <div class="lg:w-10/12 w-11/12 m-auto">
         <!-- Navbar -->
         <nav class="flex items-center justify-between py-8">
-          <a href="#"
-            ><div class="logo-area flex items-center text-4xl">
+          <!-- Logo Area -->
+          <a href="#" class="xl:w-2/3 lg:1/2"
+            ><div class="flex items-center md:text-4xl text-3xl">
               <img src="./images/navbar/logo.png" alt="Peguin Fashion Logo" />
-              <p class="pl-4 font-bold">
+              <p class="pl-2 lg:pl-3 font-bold">
                 <span class="text-green-500">Penguin </span>Fashion
               </p>
             </div>
           </a>
-          <div class="link-area w-1/3 text-xl">
-            <ul class="flex justify-between">
+          <!-- Link Area -->
+          <div class="xl:w-1/3 lg:w-1/2 text-xl">
+            <ul class="lg:flex justify-between hidden">
               <li><a href="#">Home</a></li>
               <li><a href="#">Product</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Contact Us</a></li>
             </ul>
+            <button class="lg:hidden border-2 p-1 rounded border-green-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-green-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
           </div>
         </nav>
         <!-- Top Banner -->
         <section
           class="
             flex
-            lg:flex-row
-            flex-col-reverse
+            md:flex-row
+            flex-col
             items-center
             justify-between
-            pt-10
-            pb-32
+            sm:pt-10
+            pt-5
+            sm:pb-32
+            pb-20
           "
         >
-          <div class="lg:w-2/3">
-            <h1 class="font-bold text-7xl uppercase">
+          <div class="lg:w-2/3 md:w-1/2 w-100">
+            <h1 class="font-bold lg:text-7xl sm:text-6xl text-5xl uppercase">
               <span class="text-green-500">Be the Penguins</span> <br />of
               Winter
             </h1>
-            <p class="w-7/12 pt-6 pb-12 text-xl">
+            <p class="lg:w-7/12 md:w-10/12 pt-6 pb-12 sm:text-xl text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
               voluptate. Lorem ipsum dolor sit amet consectetur adipisicing
               elit.
@@ -93,17 +114,41 @@
               </div>
             </button>
           </div>
-          <div class="w-1/3 flex justify-center">
+          <div
+            class="
+              lg:w-1/3
+              md:w-1/2
+              sm:w-100
+              w-11/12
+              md:pt-0
+              sm:pt-16
+              pt-10
+              flex
+              justify-center
+            "
+          >
             <img src="./images/header/header-img.png" alt="" />
           </div>
         </section>
       </div>
     </header>
     <!-- Women's Jacket Container -->
-    <section class="w-9/12 m-auto pt-20">
-      <h2 class="uppercase text-4xl font-semibold">Women's Jacket</h2>
+    <section class="lg:w-9/12 md:w-10/12 w-11/12 m-auto pt-20">
+      <h2 class="uppercase text-4xl font-bold text-center md:text-left pb-5">
+        Women's Jacket
+      </h2>
       <!-- Card Container -->
-      <div class="grid grid-cols-3 gap-20 py-5">
+      <div
+        class="
+          grid
+          xl:grid-cols-3
+          lg:grid-cols-2
+          grid-cols-1
+          xl:gap-20
+          gap-10
+          py-5
+        "
+      >
         <!-- Product Card -->
         <div class="p-5 shadow-xl bg-white rounded-xl">
           <div
@@ -273,10 +318,22 @@
       </div>
     </section>
     <!-- Men's Jacket Container -->
-    <section class="w-9/12 m-auto pt-20">
-      <h2 class="uppercase text-4xl font-semibold">Men's Jacket</h2>
+    <section class="lg:w-9/12 md:w-10/12 w-11/12 m-auto pt-20">
+      <h2 class="uppercase text-4xl font-bold text-center md:text-left pb-5">
+        Men's Jacket
+      </h2>
       <!-- Card Container -->
-      <div class="grid grid-cols-3 gap-20 py-5">
+      <div
+        class="
+          grid
+          xl:grid-cols-3
+          lg:grid-cols-2
+          grid-cols-1
+          xl:gap-20
+          gap-10
+          py-5
+        "
+      >
         <!-- Product Card -->
         <div class="p-5 shadow-xl bg-white rounded-xl">
           <div
@@ -446,11 +503,22 @@
       </div>
     </section>
     <!-- Footer Section -->
-    <footer class="w-9/12 m-auto py-32">
+    <footer class="lg:w-9/12 w-full m-auto py-32">
       <!-- Footer Grid Container -->
-      <section class="grid grid-cols-2 gap-10">
+      <section class="grid md:grid-cols-2 grid-cols-1 gap-10">
         <!-- Footer Grid Item -->
-        <div class="flex items-center bg-white shadow-lg rounded-lg p-4">
+        <div
+          class="
+            flex
+            items-center
+            bg-white
+            shadow-lg
+            rounded-lg
+            p-4
+            w-11/12
+            m-auto
+          "
+        >
           <img src="./images/footer/footer-icon-1.png" alt="" />
           <div class="pl-4">
             <h3 class="text-2xl font-semibold">Find the Pefect Fit</h3>
@@ -461,11 +529,31 @@
           </div>
         </div>
         <!-- Footer Grid Item -->
-        <div class="flex items-center justify-center row-span-3">
+        <div
+          class="
+            flex
+            items-center
+            order-first
+            md:order-none
+            justify-center
+            row-span-3
+          "
+        >
           <img src="./images/footer/footer-image.png" alt="" />
         </div>
         <!-- Footer Grid Item -->
-        <div class="flex items-center bg-white shadow-lg rounded-lg p-4">
+        <div
+          class="
+            flex
+            items-center
+            bg-white
+            shadow-lg
+            rounded-lg
+            p-4
+            w-11/12
+            m-auto
+          "
+        >
           <img src="./images/footer/footer-icon-2.png" alt="" />
           <div class="pl-4">
             <h3 class="text-2xl font-semibold">Free Exchanges</h3>
@@ -476,7 +564,18 @@
           </div>
         </div>
         <!-- Footer Grid Item -->
-        <div class="flex items-center bg-white shadow-lg rounded-lg p-4">
+        <div
+          class="
+            flex
+            items-center
+            bg-white
+            shadow-lg
+            rounded-lg
+            p-4
+            w-11/12
+            m-auto
+          "
+        >
           <img src="./images/footer/footer-icon-3.png" alt="" />
           <div class="pl-4">
             <h3 class="text-2xl font-semibold">Contact Our Seller</h3>
